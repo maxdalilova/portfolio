@@ -1,5 +1,5 @@
 const RSS_FEED_URL = "https://www.google.fr/alerts/feeds/11186227470798614956/10976880858622356364";
-const PROXY_URL = "https://corsproxy.io/"; 
+const PROXY_URL = "https://corsproxy.io/?url=";
 
 async function fetchRSS() {
     try {
@@ -9,14 +9,7 @@ async function fetchRSS() {
             throw new Error(`Erreur HTTP : ${response.status}`);
         }
 
-        const data = await response.json();
-        console.log(data); // Vérifiez la réponse complète du proxy
-
-        if (!data.contents) {
-            throw new Error("Données invalides reçues du proxy.");
-        }
-
-        const text = data.contents;
+        const text = await response.text();
 
         if (!text.startsWith('<?xml')) {
             throw new Error("Le flux RSS ne contient pas de XML valide.");
@@ -24,11 +17,14 @@ async function fetchRSS() {
 
         const parser = new DOMParser();
         const xml = parser.parseFromString(text, "application/xml");
-        console.log(xml); // Vérifiez le XML après parsing
 
-        // Utilisez <entry> au lieu de <item>
-        const entries = Array.from(xml.querySelectorAll("entry"));
-        console.log(entries); // Vérifiez si les éléments <entry> sont trouvés
+        // Vérifie les erreurs de parsing XML
+        const parsererror = xml.querySelector("parsererror");
+        if (parsererror) {
+            throw new Error("Erreur lors du parsing XML : " + parsererror.textContent);
+        }
+
+        const entries = Array.from(xml.querySelectorAll("entry")).slice(0, 6); // 🔥 Limitée à 6
 
         if (entries.length === 0) {
             document.getElementById("rss-feed").innerHTML = "Aucune alerte trouvée.";
@@ -39,19 +35,23 @@ async function fetchRSS() {
 
         entries.forEach(entry => {
             const title = entry.querySelector("title")?.textContent || "Titre non disponible";
-            const link = entry.querySelector("link")?.textContent.trim() || "#"; // Adaptation pour Google Alerts
+
+            // Google Alerts : le lien est dans l’attribut href
+            const linkElement = entry.querySelector("link");
+            const link = linkElement?.getAttribute("href") || "#";
+
             let description = entry.querySelector("content")?.textContent || "Aucune description disponible.";
 
-            // Nettoyage du HTML
+            // Nettoyage HTML
             const tempDiv = document.createElement("div");
             tempDiv.innerHTML = description;
             const sanitizedDescription = tempDiv.textContent || tempDiv.innerText || "";
 
             output += `
-            <div class="project">
-                <h3><a href="${link}" target="_blank">${title}</a></h3>
-                <p>${sanitizedDescription}</p>
-            </div>
+                <div class="project">
+                    <h3><a href="${link}" target="_blank">${title}</a></h3>
+                    <p>${sanitizedDescription}</p>
+                </div>
             `;
         });
 
@@ -63,5 +63,4 @@ async function fetchRSS() {
     }
 }
 
-// Appel de la fonction au chargement de la page
 fetchRSS();
