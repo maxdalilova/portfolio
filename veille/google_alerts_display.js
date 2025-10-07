@@ -1,4 +1,4 @@
-const RSS_FEED_URL = "https://www.google.fr/alerts/feeds/11186227470798614956/10976880858622356364";
+const RSS_FEED_URL = "https://www.google.fr/alerts/feeds/11186227470798614956/17038765441040678728";
 const PROXY_URL = "https://corsproxy.io/?url=";
 
 async function fetchRSS() {
