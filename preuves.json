@@ -17,10 +17,10 @@
   },
   {
     "id": 3,
-    "title": "Suivi du cahier des charges et gestion de projet",
-    "desc": "Suivit d’un cahier des charge et mise en place d’une gestion de groupe avec GanttProject",
+    "title": "Gestion de projet avec GanttProject",
+    "desc": "Mise en place d’une gestion de groupe avec GanttProject",
     "icon": "📊",
-    "tags": ["groupe"],
+    "tags": ["groupe", "GSB"],
     "pdf": "pdf/Gestion_projet.pdf"
   },
   {
