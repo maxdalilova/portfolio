@@ -1,111 +1,690 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio BTS SISR</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="google_alerts_display.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – Dalibout--Lovato Maxence | BTS SIO SISR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <header>
-        <div class="logo">Portfolio</div>
-        <nav>
-            <ul>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="../veille/load.html">Veille</a></li>
-                <li><a href="#contact">Contact</a></li>
+<!-- ════════════════════════════════════════════════════════
+     NAVIGATION STICKY
+════════════════════════════════════════════════════════ -->
+<nav id="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">&gt; portfolio</div>
+    <div class="burger" id="burger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#hero">Accueil</a>
+      <a href="#experience">Expérience</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#preuves">Mes Preuves</a>
+      <a href="#veille">Veille</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════════════════════
+     HERO — PRÉSENTATION
+════════════════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      Disponible pour opportunités
+    </div>
+    <h1 class="hero-name">Maxence<br /><span>Dalibout -- Lovato</span></h1>
+    <p class="hero-title">
+      Étudiant BTS SIO — Option <strong>SISR</strong> &nbsp;|&nbsp; 2ème année &nbsp;|&nbsp; Lycée Chaptal
+    </p>
+    <p class="hero-desc">
+      Passionné par les infrastructures réseaux, la cybersécurité et l'administration systèmes.
+    </p>
+    <div class="hero-meta">
+      <div class="hero-chip"><span class="ico">📍</span> 2900 Quimper, France</div>
+      <div class="hero-chip"><span class="ico">🎓</span> BTS SIO SISR — 2025</div>
+      <div class="hero-chip"><span class="ico">📅</span> 20 ans</div>
+      <div class="hero-chip"><span class="ico">🌐</span> francais / anglais</div>
+    </div>
+  </div>
+  <div class="hero-deco"></div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════════════════════════════
+     EXPÉRIENCE PROFESSIONNELLE
+════════════════════════════════════════════════════════ -->
+<section id="experience">
+  <div class="container">
+    <div class="section-tag">// 01 — Expérience Professionnelle</div>
+    <h2 class="section-title">Mes Stages</h2>
+    <p class="section-sub">Deux immersions en entreprise qui ont forgé ma pratique terrain des infrastructures informatiques.</p>
+
+    <div class="xp-grid">
+
+      <!-- Stage 1 -->
+      <div class="xp-card">
+        <div class="xp-num">01</div>
+        <div class="xp-header">
+          <div class="xp-company">CERFrance</div>
+          <div class="xp-period">19/05/2025 → 27/06/2025</div>
+        </div>
+        <div class="xp-role">Technicien Support Informatique — Stage BTS SIO SISR (1ère année)</div>
+        <p class="xp-desc">
+          {Description des missions effectuées lors du premier stage. Par exemple : installation et configuration
+          de postes de travail, gestion du parc informatique, assistance aux utilisateurs, mise en place de VLAN, etc.}
+        </p>
+        <div class="xp-tags">
+          <span class="xp-tag">GLPI</span>
+          <span class="xp-tag">GLPI FormCreator</span>
+          <span class="xp-tag">Windows</span>
+        </div>
+      </div>
+
+      <!-- Stage 2 -->
+      <div class="xp-card">
+        <div class="xp-num">02</div>
+        <div class="xp-header">
+          <div class="xp-company">Lycée Professionnel et Technologique Jean Chaptal</div>
+          <div class="xp-period">05/01/2026 → 14/02/2026</div>
+        </div>
+        <div class="xp-role">Technicien Réseau &amp; Systèmes — Stage BTS SIO SISR (2ème année)</div>
+        <p class="xp-desc">
+          {Description des missions effectuées lors du deuxième stage. Par exemple : administration de serveurs Linux,
+          mise en place de sauvegardes, supervision réseau, rédaction de documentation technique, etc.}
+        </p>
+        <div class="xp-tags">
+          <span class="xp-tag">Linux</span>
+          <span class="xp-tag">Cisco</span>
+          <span class="xp-tag">GLPI</span>
+          <span class="xp-tag">LAMP</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════════════════════════════
+     PARCOURS ACADÉMIQUE
+════════════════════════════════════════════════════════ -->
+<section id="parcours">
+  <div class="container">
+    <div class="section-tag">// 02 — Parcours Académique</div>
+    <h2 class="section-title">Formation</h2>
+    <p class="section-sub">Un cursus orienté vers les systèmes et réseaux, depuis le lycée jusqu'au BTS.</p>
+
+    <div class="acad-grid">
+
+      <div class="acad-card">
+        <div class="acad-year">25</div>
+        <div class="acad-badge">En cours</div>
+        <div class="acad-title">BTS SIO — Option SISR</div>
+        <div class="acad-school">📍 Lycée Chaptal — Paris</div>
+        <p class="acad-desc">
+          Solutions d'Infrastructure, Systèmes et Réseaux. Formation orientée administration réseau,
+          cybersécurité et gestion des systèmes d'information.
+        </p>
+        <div class="acad-specs">
+          <span class="acad-spec">Réseaux TCP/IP</span>
+          <span class="acad-spec">Active Directory</span>
+          <span class="acad-spec">Linux/Windows Server</span>
+          <span class="acad-spec">Cybersécurité</span>
+          <span class="acad-spec">Scripting</span>
+        </div>
+      </div>
+
+      <div class="acad-card">
+        <div class="acad-year">23</div>
+        <div class="acad-badge">Obtenu</div>
+        <div class="acad-title">Baccalauréat Général</div>
+        <div class="acad-school">📍 Lycée Sainte-Thérèse — Quimper</div>
+        <p class="acad-desc">
+          Baccalauréat général avec mention — Spécialités Mathématiques et Numérique &amp; Sciences Informatiques (NSI).
+        </p>
+        <div class="acad-specs">
+          <span class="acad-spec">Python</span>
+          <span class="acad-spec">Base du développement</span>
+          <span class="acad-spec">Base du réseau</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════════════════════════════
+     MES PREUVES
+════════════════════════════════════════════════════════ -->
+<section id="preuves">
+  <div class="container">
+    <div class="section-tag">// 03 — Mes Preuves</div>
+    <h2 class="section-title">Livrables &amp; Documents</h2>
+    <p class="section-sub">Clique sur une carte pour ouvrir le document associé.</p>
+    <div class="preuves-filters" id="filters"></div>
+    <div class="preuves-grid" id="preuves-grid"></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════════════════════════════
+     VEILLE INFORMATIONNELLE — Wi-Fi 7
+════════════════════════════════════════════════════════ -->
+<section id="veille">
+  <div class="container">
+    <div class="section-tag">// 04 — Veille Informationnelle</div>
+    <div class="veille-header">
+      <div>
+        <h2 class="section-title">Wi-Fi 7</h2>
+        <p style="color:var(--muted);font-size:.9rem;max-width:520px;">
+          Synthèse de veille technologique — Norme IEEE 802.11be &amp; l'évolution des réseaux sans fil de nouvelle génération.
+        </p>
+      </div>
+      <div class="wifi-badge">802.11be</div>
+    </div>
+
+    <div class="veille-tabs">
+      <button class="vtab active" onclick="switchTab(this,'v1')">I. Thème</button>
+      <button class="vtab" onclick="switchTab(this,'v2')">II. Outillage RCS</button>
+      <button class="vtab" onclick="switchTab(this,'v3')">III. Bilan</button>
+      <button class="vtab" onclick="switchTab(this,'v4')">IV. Wifi 8 ?</button>
+    </div>
+
+    <!-- ── Tab 1 : THÈME ─────────────────────────────────── -->
+    <div class="vtab-panel active" id="v1">
+      <div class="veille-block">
+        <h4>Description du thème</h4>
+        <p>
+          Le <strong style="color:var(--white)">Wi-Fi 7</strong> (IEEE 802.11be — Extremely High Throughput, EHT) est la
+          septième génération de la norme Wi-Fi, officiellement finalisée début 2024. Il succède au Wi-Fi 6/6E (802.11ax)
+          et introduit des améliorations majeures en termes de débit, de latence et de fiabilité, visant en priorité
+          les environnements à haute densité d'appareils connectés (entreprises, stades, smart buildings, domiciles
+          multi-écrans). Avec un débit théorique pouvant atteindre <strong style="color:var(--white)">46 Gbit/s</strong>,
+          il est jusqu'à <strong style="color:var(--white)">4,8× plus rapide</strong> que le Wi-Fi 6.
+        </p>
+        <p style="margin-top:10px;font-size:.85rem;color:var(--muted)">
+          📖 Source constructeur :
+          <a href="https://www.tp-link.com/fr/wifi7/" target="_blank" rel="noopener" style="color:var(--mint)">tp-link.com/fr/wifi7/</a>
+        </p>
+      </div>
+
+      <div class="veille-block">
+        <h4>Problématique</h4>
+        <p>
+          <strong style="color:var(--mint)">En quoi le Wi-Fi 7 représente-t-il une rupture technologique par rapport aux
+          générations précédentes, et quelles sont les implications de son déploiement pour les infrastructures réseau
+          d'entreprise ?</strong>
+        </p>
+      </div>
+
+      <div class="veille-block">
+        <h4>Principales innovations du Wi-Fi 7</h4>
+        <ul>
+          <li>
+            <strong style="color:var(--white)">Canaux 320 MHz</strong> — doublement de la bande passante par rapport au Wi-Fi 6E (160 MHz),
+            disponibles sur la bande 6 GHz uniquement.
+          </li>
+          <li>
+            <strong style="color:var(--white)">4096-QAM</strong> — modulation 20 % plus dense que le 1024-QAM du Wi-Fi 6,
+            permettant d'encoder plus de données par symbole radio.
+          </li>
+          <li>
+            <strong style="color:var(--white)">Multi-Link Operation (MLO)</strong> — agrégation simultanée des bandes
+            2,4 / 5 / 6 GHz sur une même connexion : si une bande est saturée ou perturbée, le trafic bascule
+            automatiquement sur une autre, réduisant la latence et les coupures.
+          </li>
+          <li>
+            <strong style="color:var(--white)">16 flux spatiaux MU-MIMO</strong> — contre 8 en Wi-Fi 6,
+            pour servir davantage d'appareils simultanément à plein débit.
+          </li>
+          <li>
+            <strong style="color:var(--white)">Multi-RU (Resource Unit)</strong> — allocation plus souple des ressources
+            spectrales : un même canal peut servir plusieurs appareils de capacités différentes sans gaspillage.
+          </li>
+          <li>
+            <strong style="color:var(--white)">Latence cible &lt; 1 ms</strong> — pour les usages temps-réel
+            (gaming compétitif, réalité virtuelle/augmentée XR, télémédecine, industrie 4.0).
+          </li>
+          <li>
+            <strong style="color:var(--white)">Compatibilité WPA3 obligatoire</strong> — sécurité renforcée par
+            rapport au WPA2, avec protection contre les attaques par force brute (SAE).
+          </li>
+        </ul>
+      </div>
+
+      <div class="veille-block">
+        <h4>Comparatif rapide Wi-Fi 6 / 6E / 7</h4>
+        <div style="overflow-x:auto;margin-top:8px;">
+          <table style="width:100%;border-collapse:collapse;font-size:.82rem;">
+            <thead>
+              <tr style="background:rgba(255,255,255,.06);">
+                <th style="padding:8px 12px;text-align:left;color:var(--muted);font-weight:500;border-bottom:1px solid rgba(255,255,255,.1);">Critère</th>
+                <th style="padding:8px 12px;text-align:center;color:var(--muted);font-weight:500;border-bottom:1px solid rgba(255,255,255,.1);">Wi-Fi 6 (802.11ax)</th>
+                <th style="padding:8px 12px;text-align:center;color:var(--muted);font-weight:500;border-bottom:1px solid rgba(255,255,255,.1);">Wi-Fi 6E</th>
+                <th style="padding:8px 12px;text-align:center;color:var(--mint);font-weight:600;border-bottom:1px solid rgba(255,255,255,.1);">Wi-Fi 7 (802.11be)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid rgba(255,255,255,.05);">
+                <td style="padding:7px 12px;color:var(--muted);">Débit max théorique</td>
+                <td style="padding:7px 12px;text-align:center;">9,6 Gbit/s</td>
+                <td style="padding:7px 12px;text-align:center;">9,6 Gbit/s</td>
+                <td style="padding:7px 12px;text-align:center;color:var(--mint);font-weight:600;">46 Gbit/s</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,.05);background:rgba(255,255,255,.02);">
+                <td style="padding:7px 12px;color:var(--muted);">Largeur de canal max</td>
+                <td style="padding:7px 12px;text-align:center;">160 MHz</td>
+                <td style="padding:7px 12px;text-align:center;">160 MHz</td>
+                <td style="padding:7px 12px;text-align:center;color:var(--mint);font-weight:600;">320 MHz</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,.05);">
+                <td style="padding:7px 12px;color:var(--muted);">Modulation</td>
+                <td style="padding:7px 12px;text-align:center;">1024-QAM</td>
+                <td style="padding:7px 12px;text-align:center;">1024-QAM</td>
+                <td style="padding:7px 12px;text-align:center;color:var(--mint);font-weight:600;">4096-QAM</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,.05);background:rgba(255,255,255,.02);">
+                <td style="padding:7px 12px;color:var(--muted);">Multi-Link (MLO)</td>
+                <td style="padding:7px 12px;text-align:center;">✗</td>
+                <td style="padding:7px 12px;text-align:center;">✗</td>
+                <td style="padding:7px 12px;text-align:center;color:var(--mint);font-weight:600;">✔</td>
+              </tr>
+              <tr>
+                <td style="padding:7px 12px;color:var(--muted);">Bandes disponibles</td>
+                <td style="padding:7px 12px;text-align:center;">2,4 / 5 GHz</td>
+                <td style="padding:7px 12px;text-align:center;">2,4 / 5 / 6 GHz</td>
+                <td style="padding:7px 12px;text-align:center;color:var(--mint);font-weight:600;">2,4 / 5 / 6 GHz (MLO)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="veille-block">
+        <h4>Périmètre de la veille</h4>
+        <ul>
+          <li>Évolutions techniques de la norme 802.11be (IEEE &amp; Wi-Fi Alliance)</li>
+          <li>Déploiements réels en entreprise et retours d'expérience terrain</li>
+          <li>Compatibilité matérielle et exigences infrastructure (câblage Cat 6A/8, PoE++, switches 2,5G/10G)</li>
+          <li>Positionnement des constructeurs : Cisco, Ubiquiti, TP-Link, Intel, Qualcomm…</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ── Tab 2 : OUTILLAGE RCS ─────────────────────────── -->
+    <div class="vtab-panel" id="v2">
+
+      <!-- ══ Titre de section ══ -->
+      <div class="veille-block" style="margin-bottom:24px">
+        <h4>Méthode RCS — Recueil · Classement · Synthèse</h4>
+        <p style="color:var(--muted);font-size:.88rem;">
+          La démarche RCS structure la veille en trois phases successives : collecter l'information brute,
+          la filtrer et l'organiser, puis la synthétiser pour en extraire de la valeur.
+        </p>
+      </div>
+
+      <!-- ══ Bande horizontale flux RCS brut ══ -->
+      <div style="
+        background: linear-gradient(90deg, rgba(0,200,150,.08) 0%, rgba(0,200,150,.03) 100%);
+        border: 1px solid rgba(0,200,150,.25);
+        border-radius: 12px;
+        padding: 18px 22px;
+        margin-bottom: 20px;
+      ">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;flex-wrap:wrap;">
+          <span style="
+            background:var(--mint);
+            color:#000;
+            font-size:.7rem;
+            font-weight:700;
+            letter-spacing:.08em;
+            padding:3px 10px;
+            border-radius:20px;
+            text-transform:uppercase;
+          ">Flux de données RCS brut</span>
+          <span style="color:var(--muted);font-size:.8rem;">Google Alerts — Wi-Fi 7 / 802.11be / MLO Wi-Fi</span>
+          <a href="https://www.google.fr/alerts/feeds/11186227470798614956/17038765441040678728"
+             target="_blank" rel="noopener"
+             style="margin-left:auto;color:var(--mint);font-size:.75rem;text-decoration:none;opacity:.8;">
+            🔗 Voir le flux RSS →
+          </a>
+        </div>
+        <div id="rss-feed" style="max-height:280px;overflow-y:auto;">
+          <div style="color:var(--muted);font-size:.82rem;text-align:center;padding:12px 0;">
+            ⏳ Chargement du flux Google Alerts…
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ Avertissement : flux brut ≠ faits vérifiés ══ -->
+      <div style="
+        background: rgba(255, 180, 50, .07);
+        border: 1px solid rgba(255, 180, 50, .3);
+        border-left: 3px solid rgba(255, 180, 50, .8);
+        border-radius: 8px;
+        padding: 16px 20px;
+        margin-bottom: 24px;
+      ">
+        <div style="display:flex;gap:10px;align-items:flex-start;">
+          <span style="font-size:1.1rem;margin-top:1px;">⚠️</span>
+          <div>
+            <p style="color:#fbb040;font-weight:600;font-size:.88rem;margin-bottom:6px;">
+              Un flux brut permet de cerner des idées générales — pas des faits précis
+            </p>
+            <p style="color:var(--muted);font-size:.83rem;line-height:1.6;margin:0;">
+              Google Alerts agrège automatiquement des dizaines de sources très hétérogènes : articles de presse, blogs,
+              forums, communiqués marketing, traductions automatiques… Le flux brut est utile pour
+              <strong style="color:var(--white)">détecter des tendances et des sujets émergents</strong>,
+              mais il ne distingue pas une annonce publicitaire d'une publication technique IEEE.
+              <br><br>
+              Il est donc <strong style="color:var(--white)">indispensable de vérifier chaque information</strong> en
+              remontant jusqu'à la source primaire (Wi-Fi Alliance, IEEE Xplore, documentation constructeur officielle)
+              avant de la retenir dans la synthèse.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ Détail des trois phases ══ -->
+      <div class="tool-grid">
+        <!-- R — Recueil -->
+        <div class="tool-card">
+          <h5>R — RECUEIL</h5>
+          <p>
+            <strong style="color:var(--white)">Google Alerts</strong> — Alertes automatiques sur les mots-clés
+            <em>« Wi-Fi 7 »</em>, <em>« 802.11be »</em> et <em>« MLO Wi-Fi »</em>, diffusées par flux RSS.
+          </p>
+          <p style="margin-top:8px">
+            <strong style="color:var(--white)">Sources primaires complémentaires :</strong> IEEE Xplore,
+            Wi-Fi Alliance, blogs constructeurs (Cisco, Ubiquiti, TP-Link), presse spécialisée (LeMagIT, 01Net, ZDNet).
+          </p>
+        </div>
+
+        <!-- C — Classement -->
+        <div class="tool-card">
+          <h5>C — CLASSEMENT</h5>
+          <p>
+            <strong style="color:var(--white)">Notion</strong> — Base de données centralisée : chaque article
+            est catégorisé par type (norme, terrain, constructeur, sécurité) et évalué (pertinence, fiabilité).
+          </p>
+          <p style="margin-top:8px"><strong style="color:var(--white)">Mots-clés utilisés :</strong></p>
+          <ul style="margin-top:6px;font-size:.85rem;">
+            <li>« Wi-Fi 7 » / « 802.11be » — termes officiels</li>
+            <li>« EHT » (Extremely High Throughput) — IEEE</li>
+            <li>« MLO » (Multi-Link Operation) — innovation clé</li>
+            <li>« Wi-Fi 7 entreprise » / « Wi-Fi 7 déploiement »</li>
+            <li>« Wi-Fi 7 vs Wi-Fi 6E » — angle comparatif</li>
+          </ul>
+        </div>
+
+        <!-- S — Synthèse -->
+        <div class="tool-card">
+          <h5>S — SYNTHÈSE</h5>
+          <p>
+            <strong style="color:var(--white)">Ce portfolio</strong> — Restitution publique structurée en quatre
+            parties (thème, outillage, bilan, perspectives Wi-Fi 8).
+          </p>
+          <p style="margin-top:8px">
+            <strong style="color:var(--white)">Format :</strong> fiches par thématique,
+            tableau comparatif Wi-Fi 6 / 6E / 7, et sources vérifiées.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Tab 3 : BILAN ─────────────────────────────────── -->
+      <div class="veille-block">
+        <h4>Ce que la veille a apporté</h4>
+        <ul>
+          <li>
+            <strong style="color:var(--white)">Vision technique approfondie</strong> — Compréhension détaillée du MLO,
+            de la modulation 4096-QAM et des implications pour le câblage réseau (besoin de switches 2,5G/10G).
+          </li>
+          <li>
+            <strong style="color:var(--white)">Contexte marché</strong> — Identification des premiers équipements certifiés
+            Wi-Fi 7 et des délais réalistes de déploiement en entreprise.
+          </li>
+          <li>
+            <strong style="color:var(--white)">Lien avec les compétences SISR</strong> — La norme impacte directement
+            la conception de LAN sans fil, la gestion des fréquences et la sécurité (WPA3 renforcé).
+          </li>
+        </ul>
+      </div>
+
+      <div class="veille-block">
+        <h4>Difficultés rencontrées</h4>
+        <ul>
+          <li>
+            <strong style="color:var(--white)">Maturité limitée de la norme</strong> — Sources principalement composées
+            d'annonces constructeurs.
+          </li>
+          <li>
+            <strong style="color:var(--white)">Ressources principalement en anglais</strong> — Sources primaires IEEE
+            et Wi-Fi Alliance exclusivement anglophones.
+          </li>
+          <li>
+            <strong style="color:var(--white)">Filtrage du bruit marketing</strong> — Difficulté à distinguer
+            annonces commerciales et contenus techniques objectifs.
+          </li>
+          <li>
+            <strong style="color:var(--white)">Volume d'information</strong> — Fort afflux d'articles lors des
+            lancements produits (CES 2024, MWC 2024), nécessitant un tri rigoureux.
+          </li>
+        </ul>
+      </div>
+
+      <div class="veille-block">
+        <h4>Répartition par type de source</h4>
+        <ul>
+          <li>📄 Documentation officielle IEEE &amp; Wi-Fi Alliance</li>
+          <li>📰 Presse spécialisée (01Net, LeMagIT, ZDNet, Tom's Hardware, Clubic)</li>
+          <li>🏭 Publications constructeurs (Cisco, Intel, Qualcomm, TP-Link, Ubiquiti)</li>
+          <li>🎥 Vidéos YouTube / podcasts tech (Linus Tech Tips, NetworkChuck…)</li>
+          <li>🔔 Alertes automatisées via Google Alerts (flux RSS)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ── Tab 4 : WI-FI 8 ? ─────────────────────────────── -->
+    <div class="vtab-panel" id="v4">
+      <div class="veille-block">
+        <h4>Et après le Wi-Fi 7 ?</h4>
+        <p>
+          Le groupe de travail <strong style="color:var(--white)">IEEE 802.11bn</strong> (Ultra High Reliability — UHR),
+          officieusement appelé <strong style="color:var(--white)">Wi-Fi 8</strong>, est en cours de développement.
+          Sa publication officielle est attendue autour de <strong style="color:var(--white)">2028</strong>.
+          TP-Link, pionnier sur ce sujet, a déjà dévoilé ses premières orientations produit autour de cette norme.
+        </p>
+        <p style="margin-top:10px;font-size:.85rem;color:var(--muted)">
+          📖 Source constructeur :
+          <a href="https://www.tp-link.com/fr/wifi8/" target="_blank" rel="noopener" style="color:var(--mint)">tp-link.com/fr/wifi8/</a>
+        </p>
+      </div>
+
+      <!-- ══ Problèmes actuels du Wi-Fi 7 ══ -->
+      <div style="
+        background: rgba(220, 80, 80, .07);
+        border: 1px solid rgba(220, 80, 80, .25);
+        border-left: 3px solid rgba(220, 80, 80, .7);
+        border-radius: 8px;
+        padding: 16px 20px;
+        margin-bottom: 20px;
+      ">
+        <div style="display:flex;gap:10px;align-items:flex-start;">
+          <span style="font-size:1.1rem;margin-top:1px;">🔧</span>
+          <div>
+            <p style="color:#e06060;font-weight:600;font-size:.9rem;margin-bottom:10px;">
+              Les problèmes pratiques actuels du Wi-Fi 7 — que le Wi-Fi 8 devrait résoudre
+            </p>
+            <p style="color:var(--muted);font-size:.82rem;margin-bottom:10px;">
+              Malgré ses promesses théoriques, le Wi-Fi 7 souffre encore en pratique de plusieurs limitations
+              identifiées lors des premiers déploiements réels :
+            </p>
+            <ul style="font-size:.84rem;display:flex;flex-direction:column;gap:8px;">
+              <li>
+                <strong style="color:var(--white)">MLO encore instable selon les appareils clients</strong> —
+                Le Multi-Link Operation, fonctionnalité phare du Wi-Fi 7, n'est pas encore implémenté de façon
+                homogène par tous les fabricants de chipsets. En pratique, beaucoup d'appareils n'en tirent
+                pas encore pleinement parti.
+              </li>
+              <li>
+                <strong style="color:var(--white)">Interférences inter-AP non résolues</strong> —
+                Dans un environnement dense (open space, immeuble), plusieurs points d'accès Wi-Fi 7
+                voisins peuvent encore se gêner mutuellement, car la norme ne prévoit pas de coordination
+                centralisée entre AP. Ce problème sera adressé par le Wi-Fi 8 via le <em>Coordinated AP (Co-AP)</em>.
+              </li>
+              <li>
+                <strong style="color:var(--white)">Bande 6 GHz limitée à portée courte</strong> —
+                Les canaux 320 MHz disponibles uniquement en 6 GHz offrent une portée nettement plus faible
+                que les bandes 2,4 / 5 GHz, rendant la couverture plus difficile dans de grands espaces.
+              </li>
+              <li>
+                <strong style="color:var(--white)">Infrastructure filaire sous-jacente souvent inadaptée</strong> —
+                Le Wi-Fi 7 peut théoriquement saturer une liaison Gigabit Ethernet. Il nécessite des switches
+                2,5G ou 10G et un câblage Cat 6A minimum, ce que la plupart des installations existantes
+                ne possèdent pas.
+              </li>
+              <li>
+                <strong style="color:var(--white)">Peu d'appareils clients compatibles Wi-Fi 7 à ce jour</strong> —
+                Le parc d'appareils grand public (smartphones, laptops) certifiés Wi-Fi 7 reste encore restreint
+                fin 2024, limitant l'intérêt du déploiement à court terme dans les environnements mixtes.
+              </li>
+              <li>
+                <strong style="color:var(--white)">Consommation énergétique accrue côté AP</strong> —
+                Les points d'accès Wi-Fi 7 haut de gamme demandent un budget PoE++ (90 W) significatif,
+                augmentant les coûts d'infrastructure et la charge thermique dans les baies.
+              </li>
             </ul>
-        </nav>
-    </header>
-
-    <section id="hero">
-        <h1>Maxence Dalibout--Lovato</h1>
-        <p>Étudiant en BTS SISR, 1er année</p>
-        <a href="#projects" class="btn">Voir mes projets</a>
-    </section>
-
-    <section id="about">
-        <h2>À propos de moi</h2>
-        <p>Je suis étudiant depuis 2 ans à Chaptal (29) en deuxième année de BTS SIO (Services Informatiques aux Organisations), spécialité SISR (Solutions d'Infrastructure, Systèmes et Réseaux). J’ai toujours eu une appétence pour l’informatique et une curiosité pour les nouvelles technologies. C’est tout naturellement que je me suis tourné vers cette formation, après avoir obtenu mon BAC Général spécialité mathématique et informatique.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Compétences</h2>
-        <div style="height: 100px;"></div>
-        <div class="skills-grid">
-            <div class="skill"><a href="competence/load.html#1.1">Gérer le patrimoine informatique</a></div>
-            <div class="skill"><a href="competence/load.html#1.2">Répondre aux incidents et aux demandes d'assistance et d'évolution</a></div>
-            <div class="skill"><a href="competence/load.html#1.3">Développer la présence en ligne de l'organisation</a></div>
-            <div class="skill"><a href="competence/load.html#1.4">Travailler en mode projet</a></div>
-            <div class="skill"><a href="competence/load.html#1.5">Mettre à disposition des utilisateurs un service informatique</a></div>
-            <div class="skill"><a href="competence/load.html#1.6">Organiser son développement professionnel</a></div>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <section id="projects">
-        <h2>Projets</h2>
-        <div class="projects-grid">
-            <div class="project">
-                <h3>Active Directory</h3>
-                <p>Installation et configuration d'un serveur Windows Server 2019.</p>
-            </div>
-            <div class="project">
-                <h3>Infrastructure Virtualisée</h3>
-                <p>Déploiement d’une infrastructure avec Proxmox et machines virtuelles.</p>
-            </div>
-            <div class="project">
-                <h3>Sécurisation Réseau</h3>
-                <p>Firewall pfSense, segmentation VLAN et analyse réseau.</p>
-            </div>
-            <div class="project">
-                <h3>Active Directory</h3>
-                <p>Installation et configuration d'un serveur Windows Server 2019.</p>
-            </div>
-            <div class="project">
-                <h3>Infrastructure Virtualisée</h3>
-                <p>Déploiement d’une infrastructure avec Proxmox et machines virtuelles.</p>
-            </div>
-            <div class="project">
-                <h3>Sécurisation Réseau</h3>
-                <p>Firewall pfSense, segmentation VLAN et analyse réseau.</p>
-            </div>
-            <div class="project">
-                <h3>Active Directory</h3>
-                <p>Installation et configuration d'un serveur Windows Server 2019.</p>
-            </div>
-            <div class="project">
-                <h3>Infrastructure Virtualisée</h3>
-                <p>Déploiement d’une infrastructure avec Proxmox et machines virtuelles.</p>
-            </div>
-            <div class="project">
-                <h3>Sécurisation Réseau</h3>
-                <p>Firewall pfSense, segmentation VLAN et analyse réseau.</p>
-            </div>
-            <div class="project">
-                <h3>Active Directory</h3>
-                <p>Installation et configuration d'un serveur Windows Server 2019.</p>
-            </div>
-            <div class="project">
-                <h3>Infrastructure Virtualisée</h3>
-                <p>Déploiement d’une infrastructure avec Proxmox et machines virtuelles.</p>
-            </div>
-        </div>
-    </section>
+      <div class="veille-block">
+        <h4>Orientations envisagées pour le Wi-Fi 8 (IEEE 802.11bn)</h4>
+        <ul>
+          <li>
+            <strong style="color:var(--white)">Coordinated Access Point (Co-AP)</strong> — Coordination centralisée
+            entre points d'accès voisins pour éliminer les interférences inter-AP et maximiser le débit global
+            d'un réseau dense. Réponse directe au problème actuel du Wi-Fi 7.
+          </li>
+          <li>
+            <strong style="color:var(--white)">Débit théorique &gt; 100 Gbit/s</strong> — En combinant
+            des canaux encore plus larges et de nouvelles modulations post-4096-QAM.
+          </li>
+          <li>
+            <strong style="color:var(--white)">Latence ultra-faible déterministe</strong> — Cible &lt; 1 ms
+            garantie (et non seulement théorique) pour les usages industriels, XR et télémédecine.
+          </li>
+          <li>
+            <strong style="color:var(--white)">Intégration IA / ML native</strong> — Optimisation dynamique
+            du spectre, gestion prédictive des ressources radio et sélection automatique du canal par
+            apprentissage automatique.
+          </li>
+          <li>
+            <strong style="color:var(--white)">Meilleure gestion de la bande 6 GHz</strong> — Techniques
+            améliorées de couverture longue portée en 6 GHz pour dépasser les limitations actuelles
+            du Wi-Fi 7 sur cette bande.
+          </li>
+        </ul>
+      </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email : <a href="mailto:maxdalilova@gmail.com">maxdalilova@gmail.com</a></p>
-        <p>LinkedIn : <a href="https://www.linkedin.com/in/maxence-dalibout-lovato">maxence-dalibout-lovato</a></p>
-        <p>GitHub : <a href="https://github.com/maxdalilova">maxdalilova</a></p>
-    </section>
+      <div class="veille-block">
+        <h4>Perspective pour les infrastructures SISR</h4>
+        <p>
+          L'arrivée du Wi-Fi 8 impliquera une refonte encore plus profonde des infrastructures câblées
+          (switches 25G/100G, alimentation PoE++ renforcée, contrôleurs Wi-Fi intelligents).
+          Pour un technicien SISR, suivre ces évolutions dès aujourd'hui permet d'anticiper les investissements,
+          de conseiller sur les choix architecturaux à long terme, et de comprendre pourquoi certains
+          déploiements Wi-Fi 7 actuels méritent d'attendre la maturité de l'écosystème.
+        </p>
+      </div>
+    </div>
 
-    <footer>
-        <p>© 2024 Maxence Dalibout--Lovato - Tous droits réservés.</p>
-    </footer>
+  </div>
+</section>
 
+<!-- Script lecteur RSS Google Alerts (CORS proxy) -->
+<script>
+(function() {
+  const FEED_URL = 'https://www.google.fr/alerts/feeds/11186227470798614956/17038765441040678728';
+  const PROXY    = 'https://api.allorigins.win/get?url=' + encodeURIComponent(FEED_URL);
+  const container = document.getElementById('rss-feed');
+  if (!container) return;
+
+  fetch(PROXY)
+    .then(r => r.json())
+    .then(data => {
+      const parser  = new DOMParser();
+      const xml     = parser.parseFromString(data.contents, 'text/xml');
+      const entries = xml.querySelectorAll('entry');
+      if (!entries.length) { container.innerHTML = '<p style="color:var(--muted);font-size:.82rem;text-align:center">Aucun article disponible pour le moment.</p>'; return; }
+      let html = '<ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">';
+      entries.forEach(entry => {
+        const title   = entry.querySelector('title')?.textContent || 'Sans titre';
+        const link    = entry.querySelector('link')?.getAttribute('href') || '#';
+        const updated = entry.querySelector('updated')?.textContent || '';
+        const date    = updated ? new Date(updated).toLocaleDateString('fr-FR', {day:'2-digit',month:'short',year:'numeric'}) : '';
+        html += `<li style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:10px 14px;">
+          <a href="${link}" target="_blank" rel="noopener"
+             style="color:var(--mint);font-size:.83rem;font-weight:500;text-decoration:none;line-height:1.4;display:block;">${title}</a>
+          ${date ? `<span style="color:var(--muted);font-size:.74rem;margin-top:4px;display:block;">📅 ${date}</span>` : ''}
+        </li>`;
+      });
+      html += '</ul>';
+      container.innerHTML = html;
+    })
+    .catch(() => {
+      container.innerHTML = '<p style="color:var(--muted);font-size:.82rem;text-align:center">⚠️ Impossible de charger le flux — <a href="' + FEED_URL + '" target="_blank" style="color:var(--mint)">ouvrir directement</a></p>';
+    });
+})();
+</script>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════════════════════════════
+     FOOTER — CONTACT
+════════════════════════════════════════════════════════ -->
+<footer id="contact">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-name">Maxence <span>Dalibout Lovato</span></div>
+        <div class="footer-sub">BTS SIO SISR — Lycée Chaptal</div>
+      </div>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:maxdalilova@gmail.com">
+          <span class="ico">✉️</span>maxdalilova@gmail.com
+        </a>
+        <a class="contact-link" href="tel:{+330648515350}">
+          <span class="ico">📱</span>+33 6 48 51 53 50
+        </a>
+        <a class="contact-link" href="https://www.linkedin.com/in/maxence-dalibout-lovato" target="_blank" rel="noopener">
+          <span class="ico">💼</span> LinkedIn — maxence-dalibout-lovato
+        </a>
+        <a class="contact-link" href="https://github.com/maxdalilova" target="_blank" rel="noopener">
+          <span class="ico">🐙</span> GitHub — maxdalilova
+        </a>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <span>© 2026 Maxence Dalibout Lovato — Tous droits réservés</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "title": "Gestion des utilisateurs du domaine GSB",
+    "desc": "Mise en place de différent utilisateur avec de multiples niveaux d’autorisation sur l’AD de GSB",
+    "icon": "👥",
+    "tags": ["GSB", "Active Directory", "serveur"],
+    "pdf": "pdf/AD_utilisateurs.pdf"
+  },
+  {
+    "id": 2,
+    "title": "Création d’un serveur TFT",
+    "desc": "Mise ne place d’un serveur TFT de sauvegarde de configuration",
+    "icon": "💾",
+    "tags": ["serveur", "TFT"],
+    "pdf": "pdf/TFT_sauvegarde.pdf"
+  },
+  {
+    "id": 3,
+    "title": "Suivi du cahier des charges et gestion de projet",
+    "desc": "Suivit d’un cahier des charge et mise en place d’une gestion de groupe avec GanttProject",
+    "icon": "📊",
+    "tags": ["groupe"],
+    "pdf": "pdf/Gestion_projet.pdf"
+  },
+  {
+    "id": 4,
+    "title": "Mise en place d’un serveur de déploiement iVentoy",
+    "desc": "Mise en place d’un serveur de déploiement iVentoy pour faciliter le déploiement de machine virtuelle",
+    "icon": "🚀",
+    "tags": ["serveur", "deploiment"],
+    "pdf": "pdf/iVentoy_deployment.pdf"
+  },
+  {
+    "id": 5,
+    "title": "Création d’un compte Linkedin",
+    "desc": "Création d’un compte Linkedin afin de me promouvoir professionnellement",
+    "icon": "💼",
+    "tags": ["Linkedin"],
+    "pdf": "pdf/Linkedin_creation.pdf"
+  },
+  {
+    "id": 6,
+    "title": "Site web projet La fleur",
+    "desc": "Création d'un site web en suivant un cahier des charges.",
+    "icon": "🌐",
+    "tags": ["web", "La fleur"],
+    "pdf": "pdf/Site_web_La_fleur.pdf"
+  },
+  {
+    "id": 7,
+    "title": "Apprentissage du fonctionnement de l’envoie d’un mail",
+    "desc": "Apprentissage du fonctionnement de l’envoie et la reception d’un mail pour comprendre le fonctionnement de mail malveillant",
+    "icon": "📧",
+    "tags": ["1er année de stage", "mail", "sécurité"],
+    "pdf": "pdf/mail_sécurité.pdf"
+  },
+  {
+    "id": 8,
+    "title": "Travail service support, réponse aux tickets GLPI",
+    "desc": "Participation au service support, réponse aux tickets GLPI et prise de support à distance",
+    "icon": "🎟️",
+    "tags": ["1er année de stage", "support", "GLPI"],
+    "pdf": "glpi_tickets.pdf"
+  },
+  {
+    "id": 9,
+    "title": "Création d’un formulaire GLPI",
+    "desc": "Création d’un formulaire GLPI pour faciliter la prise en charge des demandes de support à distance",
+    "icon": "📋",
+    "tags": ["1er année de stage", "support", "GLPI"],
+    "pdf": "pdf/glpi_formulaire.pdf"
+  },
+  {
+    "id": 10,
+    "title": "Prise de contrôle d’ordinateur à distance",
+    "desc": "Prise de contrôle d’ordinateur à distance pour assurer le support technique",
+    "icon": "🔗",
+    "tags": ["1er année de stage", "support"],
+    "pdf": "pdf/prise_de_controle.pdf"
+  },
+  {
+    "id": 11,
+    "title": "Refonte des plans du système réseau",
+    "desc": "Refonte des plans du système réseau pour permettre une meilleure compréhension et une maintenance plus efficace",
+    "icon": "🗺️​",
+    "tags": ["1er année de stage", "réseau"],
+    "pdf": "pdf/plans_reseau.pdf"
+  },
+  {
+    "id": 12,
+    "title": "Mise en place d’un serveur GLPI avec remontée automatique des machines",
+    "desc": "Mise en place d’un serveur GLPI avec remontée automatique des machines pour faciliter la gestion globale du parc informatique",
+    "icon": "🎟️",
+    "tags": ["2er année de stage", "support", "GLPI"],
+    "pdf": "pdf/glpi_mise_en_place.pdf"
+  },
+  {
+    "id": 13,
+    "title": "Documentation pour la mise en place d’un serveur GLPI",
+    "desc": "Création d’une documentation pour permettre la mise en place d’un serveur GLPI",
+    "icon": "📚",
+    "tags": ["2er année de stage", "GLPI"], 
+    "pdf": "pdf/glpi_documentation.pdf"
+  },
+  {
+    "id": 14,
+    "title": "Documentation pour la mise en place d’un serveur LAMP",
+    "desc": "Mise en place d’un serveur LAMP et création d’une documentation pour en créer.",
+    "icon": "📝",
+    "tags": ["2er année de stage", "LAMP"],
+    "pdf": "pdf/lamp_documentation.pdf"
+  }
+]
