@@ -61,7 +61,7 @@
     "desc": "Participation au service support, réponse aux tickets GLPI et prise de support à distance",
     "icon": "🎟️",
     "tags": ["1er année de stage", "support", "GLPI"],
-    "pdf": "glpi_tickets.pdf"
+    "pdf": "pdf/glpi_tickets.pdf"
   },
   {
     "id": 9,
